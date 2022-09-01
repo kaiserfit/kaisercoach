@@ -3,9 +3,9 @@ import logo from '../images/logo.webp';
 import {MdOutlineMailOutline} from "react-icons/md"
 import {AiFillEye, AiFillEyeInvisible} from "react-icons/ai"
 import { useNavigate } from 'react-router-dom';
-export default function Login() {
+export default function Login({setIsLogged}) {
     const [pwVisible, setPwVisible] = useState(false)
-    const navigate = useNavigate()
+    
     useEffect(()=>{
       if (pwVisible){
         document.getElementById('pw').type = 'text'
@@ -20,7 +20,7 @@ export default function Login() {
     }
     const loginSubmit = (e) => {
       e.preventDefault();
-      navigate("/home", { push: true });
+     setIsLogged(true)
     }   
 
 
