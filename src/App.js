@@ -7,7 +7,7 @@ import {useTransition, animated} from "react-spring"
 
 function App() {
   const [path, setPath] = useState(window.location.pathname)
-
+  
   return (
     <BrowserRouter>
       <Routes>
