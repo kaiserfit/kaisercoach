@@ -12,12 +12,12 @@ export default function MainDock(){
 
 
     return (
-        <div className="container-fluid bg-gray px-0 min-vh-100 position-relative">
+        <div className="container-fluid bg-gray px-0 min-vh-100 ">
             <TopBar />
         <BrowserRouter>
-            <div className="row">
+            <div className="row w-100">
                 <div className="col-3"><NavBar /></div>
-                <div className="col-9"><AnimatedRoutes /></div>
+                <div className="col-6"><AnimatedRoutes /></div>
             </div>
             
             
